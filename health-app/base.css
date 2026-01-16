@@ -8,12 +8,12 @@ body {
   box-sizing: border-box;
 }
 
-/* شريط التنقل */
+
 .navbar {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;   /* نخلي العناصر على نفس خط النص */
+  align-items: baseline;   
   background-color: transparent;
   padding: 15px 30px;
   position: fixed;
@@ -23,14 +23,14 @@ body {
   gap: 20px;
 }
 
-/* اللوجو */
+
 .logo {
-  font-size: 40px;         /* حجم كبير */
+  font-size: 40px;        
   color: #a7d806;
-  line-height: 1;          /* يظبط ارتفاع السطر */
+  line-height: 1;         
 }
 
-/* روابط التنقل */
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -39,7 +39,7 @@ body {
   padding-right: 30px;
 }
 
-/* شكل الروابط */
+
 .nav-links a {
   text-decoration: none;
   color: #f3efef;
@@ -49,17 +49,17 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* عند المرور على الرابط */
+
 ul li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
-/* الرابط النشط */
+
 ul li a.active {
   background-color: #04AA6D;
 }
 
-/* الرابط الخاص بالـ Profile */
+
 .nav-links a.profile-link {
   border: 2px solid #04AA6D;
   border-radius: 50%;
@@ -76,22 +76,23 @@ ul li a.active {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* عند المرور على الـ Profile */
+
 .nav-links a.profile-link:hover {
   background-color: #04AA6D;
   color: #fff;
   transform: scale(1.1);
 }
-/* Footer */
+
 .footer {
   width: 100%;
-  background-color: transparent; /* الخلفية شفافة أو ممكن تخليها لون غامق */
-  color: #fff;                  /* النص أبيض */
-  text-align: center;           /* النص في النص */
-  padding: 20px 0;              /* مسافة فوق وتحت */
-  position: fixed;              /* ثابت في أسفل الصفحة */
+  background-color: transparent; 
+  color: #fff;                 
+  text-align: center;           
+  padding: 20px 0;             
+  position: fixed;             
   bottom: 0;
   left: 0;
   font-size: 14px;
   z-index: 1000;
+
 }
