@@ -1,0 +1,118 @@
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px 24px;
+  text-align: center;
+  color: #fff; /* النص أبيض */
+}
+
+/* Intro paragraph */
+.container .intro {
+  color: #eee;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Symptom form box */
+#symptom-form {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+#symptom-form:hover {
+  transform: translateY(-2px);
+}
+
+/* Form groups */
+#symptom-form .form-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+#symptom-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input fields */
+#symptom-form input[type="number"],
+#symptom-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+}
+
+/* Submit button */
+#symptom-form button {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0077cc, #005fa3);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#symptom-form button:hover {
+  background: linear-gradient(135deg, #005fa3, #004a82);
+  transform: scale(1.05);
+}
+
+/* Result box */
+#result {
+  margin-top: 30px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  padding: 24px;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+/* Result title */
+#result h3 {
+  margin-bottom: 16px;
+  color: #ffeb3b;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Disease list */
+#result ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#result li {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#result li:hover {
+  background: rgba(255,255,255,0.2);
+}

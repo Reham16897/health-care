@@ -1,0 +1,99 @@
+/* المحتوى الرئيسي في النص */
+.content {
+  display: flex;
+  justify-content: center;   /* توسيط أفقي */
+  align-items: center;       /* توسيط عمودي */
+  height: calc(100vh - 60px); /* ارتفاع الشاشة ناقص الـ navbar */
+  flex-direction: column;
+}
+
+/* صندوق تسجيل الدخول والـ Profile */
+#login-container,
+#profile-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+#login-container h2,
+#profile-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+/* الملاحظة تحت الفورم */
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.note a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
+
+}
+.profile-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-analysis {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.profile-analysis h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.profile-analysis ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+}

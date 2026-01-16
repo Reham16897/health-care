@@ -1,0 +1,69 @@
+
+CREATE DATABASE OnlineHealthCare;
+GO
+
+USE OnlineHealthCare;
+GO
+
+
+CREATE TABLE FoodCalories (
+    FoodId INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL,
+    Calories INT NOT NULL
+);
+
+
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Apple (1 medium)', 95);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Banana (1 medium)', 105);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Orange (1 medium)', 62);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Strawberries (1 cup)', 49);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Grapes (1 cup)', 104);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Watermelon (1 cup)', 46);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Mango (1 medium)', 202);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Pineapple (1 cup)', 82);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Blueberries (1 cup)', 84);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Pear (1 medium)', 101);
+
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Rice (1 cup cooked)', 206);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Bread (1 slice)', 80);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Pasta (1 cup cooked)', 220);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Pizza Slice', 285);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Burger (1 medium)', 354);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('French Fries (1 serving)', 365);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Oatmeal (1 cup)', 150);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Corn (1 cup)', 125);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Quinoa (1 cup)', 222);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Potato (100g)', 77);
+
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Egg (1 large)', 78);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Milk (1 cup)', 103);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Cheese (100g)', 402);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Yogurt (1 cup)', 150);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Butter (1 tbsp)', 102);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Ice Cream (1 cup)', 207);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Chicken Breast (100g)', 165);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Beef Steak (100g)', 271);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Fish Salmon (100g)', 208);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Shrimp (100g)', 99);
+
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Almonds (28g)', 164);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Walnuts (28g)', 185);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Peanuts (28g)', 161);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Cashews (28g)', 155);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Sunflower Seeds (28g)', 164);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Avocado (1 medium)', 240);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Olive Oil (1 tbsp)', 119);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Chocolate Bar (40g)', 210);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Cookies (2 pieces)', 160);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Cake Slice', 250);
+
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Coca Cola (1 can)', 140);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Orange Juice (1 cup)', 112);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Coffee with Milk (1 cup)', 45);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Tea (1 cup)', 2);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Honey (1 tbsp)', 64);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Jam (1 tbsp)', 56);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Soup Vegetable (1 cup)', 80);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Soup Chicken (1 cup)', 120);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Salad (1 bowl)', 150);
+INSERT INTO FoodCalories (Name, Calories) VALUES ('Sandwich (1 medium)', 250);

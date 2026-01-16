@@ -1,0 +1,51 @@
+/* ✅ القسم الرئيسي */
+.main {
+  display: flex;
+  flex-wrap: wrap; /* يسمح بصفين */
+  justify-content: center; /* توسيط العناصر أفقياً */
+  gap: 40px;
+  padding: 130px 50px 50px; /* زودنا padding-top عشان تبعد عن الـ navbar */
+}
+
+/* ✅ المقالات */
+.article {
+  flex: 1 1 calc(50% - 40px); /* كل مقالة تاخد نص العرض مع مسافة */
+  max-width: 500px;
+  text-align: left;
+}
+
+/* ✅ الصور */
+.article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+}
+
+/* ✅ الكلام تحت الصورة */
+.article p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f5f0f0;
+  background-color:rgba(255, 255, 255, 0.2);
+
+;
+  padding: 15px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 0;
+}
+
+/* ✅ قسم تسجيل الدخول */
+.login-section {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+; /* أبيض صريح بدل الشفاف */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 400px;
+  text-align: center;
+  color: #333; /* لون النص جوه login */
+}

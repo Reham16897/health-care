@@ -1,0 +1,53 @@
+/* medicalanalysis.css */
+
+/* Basic reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.analysis-page {
+  display: flex; justify-content: center; align-items: center;
+  flex-direction: column; min-height: 100vh;
+  background-color: #222; color: #fff; font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 4rem; margin-bottom: 20px; color: #f3f8f6; text-align: center;
+}
+
+.analysis-box {
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  width: 100%; max-width: 420px;
+}
+
+select, input, button {
+  padding: 10px 14px; font-size: 1rem; border-radius: 6px; border: none;
+  width: 100%;
+  background: #2d2d2d; color: #fff;
+}
+
+select, input { outline: none; }
+input::placeholder { color: #bbb; }
+
+button {
+  background-color: #04AA6D; color: #fff; cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+button:hover { background-color: #f1f5f3; transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+.result {
+  margin-top: 8px; background-color: rgba(255, 255, 255, 0.12);
+  padding: 14px; border-radius: 10px; width: 100%;
+  font-size: 1rem; text-align: center; min-height: 48px;
+}
+
+/* Helper states */
+.input-error { box-shadow: 0 0 0 2px #d9534f inset; }
+.input-ok { box-shadow: 0 0 0 2px #04AA6D inset; }
+
+/* Mobile */
+@media (max-width: 480px) {
+  .content h1 { font-size: 1.8rem; }
+  select, input, button, .result { font-size: 0.95rem; }
+}

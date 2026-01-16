@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Analysis</title>
+  <!-- Unified base styles -->
+  <link rel="stylesheet" href="base.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="medicalanalysis.css" />
+</head>
+<body class="analysis-page">
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Online Health Care</div>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="caloriesandfoodtracker.html">Calories & Food Tracker</a></li>
+      <!-- Fix typo: symptomchecker.html -->
+      <li><a href="symptomchecker.html">Symptom Checker</a></li>
+      <li><a href="medicalanalysis.html" class="active">Medical Analysis</a></li>
+      <li><a href="profile.html" class="profile-link">👤</a></li>
+    </ul>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Medical Analysis Checker</h1>
+
+    <div class="analysis-box">
+      <select id="testType" aria-label="Select test type">
+        <option value="">Select a test</option>
+        <option value="cbc">CBC (Hemoglobin)</option>
+        <option value="vitaminD">Vitamin D</option>
+        <option value="glucose">Blood Sugar (Fasting)</option>
+        <option value="bp">Blood Pressure (Systolic/Diastolic)</option>
+      </select>
+
+      <input
+        type="text"
+        id="testValue"
+        placeholder="Enter your result"
+        aria-label="Enter your result"
+      />
+
+      <button id="analyzeBtn" type="button">Analyze</button>
+
+      <div class="result" id="resultBox" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Page script -->
+  <script src="medicalanalysis.js"></script>
+</body>
+</html>

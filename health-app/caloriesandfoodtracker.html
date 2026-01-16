@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calories & Food Tracker</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="caloriesandfoodtracker.css">
+</head>
+<body class="calories-page">
+  <!-- شريط التنقل -->
+  <div class="navbar">
+    <div class="logo">Online Health Care</div>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="caloriesandfoodtracker.html" class="active">Calories & Food Tracker</a></li>
+      <li><a href="symptomcheker.html"> Symptom Checker</a></li>
+      <li><a href="medicalanalysis.html">Medical Analysis</a></li>
+      <li><a href="profile.html" class="profile-link">👤</a></li>
+    </ul>
+  </div>
+
+  <!-- المحتوى -->
+  <main class="content">
+    <h1>🍎 Calories & Food Tracker</h1>
+    <p>Enter a food item below to check its estimated calorie content.</p>
+
+    <!-- جزء حساب سعرات الأكل -->
+    <div class="calorie-box">
+      <input type="text" id="foodInput" placeholder="e.g. Apple, Pizza, Rice...">
+      <button onclick="checkCalories()">Check Calories</button>
+      <div class="result" id="calorieResult"></div>
+    </div>
+
+    <!-- جزء حساب السعرات اليومية -->
+    <h2>⚡ Daily Calorie Needs</h2>
+    <p>Enter your details to estimate how many calories you should eat per day.</p>
+    <div class="daily-calorie-box">
+      <input type="number" id="ageInput" placeholder="Age (years)">
+      <input type="number" id="heightInput" placeholder="Height (cm)">
+      <input type="number" id="weightInput" placeholder="Weight (kg)">
+      <button onclick="calculateDailyCalories()">Calculate Needs</button>
+      <div class="result" id="dailyCalorieResult"></div>
+    </div>
+  </main>
+  
+
+  <!-- ملفات الجافاسكريبت -->
+  <script src="caloriesandfoodtracker.js"></script>
+</body>
+</html>

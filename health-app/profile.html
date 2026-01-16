@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body class="profile-page">
+  <div class="navbar">
+    <div class="logo">Online Health Care</div>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="caloriesandfoodtracker.html">Calories & Food Tracker</a></li>
+      <li><a href="symptomchecker.html">Symptom Checker</a></li>
+      <li><a href="medicalanalysis.html">Medical Analysis</a></li>
+      <li><a href="profile.html" class="profile-link" >👤</a></li>
+    </ul>
+  </div>
+
+  <main class="content">
+    <div id="login-container">
+    <h2> sign in</h2>
+    <form id="loginForm">
+      <label> username :</label>
+      <input type="text" id="username" required>
+      
+      <label> Password :</label>
+      <input type="password" id="password" required>
+      
+      <button type="submit">enter</button>
+    </form>
+  </div>
+
+  <div id="profile-container" class="hidden">
+  <h2>Hello <span id="profileName"></span> 👋</h2>
+
+  <div class="profile-info">
+    <p><strong>Age:</strong> <span id="profileAge"></span></p>
+    <p><strong>Height:</strong> <span id="profileHeight"></span></p>
+    <p><strong>Weight:</strong> <span id="profileWeight"></span></p>
+    <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+  </div>
+
+  <div class="profile-analysis">
+    <h3>Medical Analysis</h3>
+    <ul id="analysisList">
+      <!-- Example: populated dynamically -->
+    </ul>
+  </div>
+
+  <button id="logoutBtn">Log out</button>
+</div>
+
+<p class="note">Don't have an account? <a href="signin.html">Sign in</a></p>
+</body>
+</html>

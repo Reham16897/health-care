@@ -1,0 +1,108 @@
+/* تنسيق عام للصفحة */
+.calories-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 150px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* المحتوى */
+.calories-page .content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #eff7f4;
+}
+
+/* حاوية الصندوقين جنب بعض */
+.boxes-container {
+  display: flex;
+  flex-direction: row;   /* يخليهم جنب بعض */
+  gap: 40px;             /* مسافة بينهم */
+  margin-top: 30px;
+  justify-content: center; /* توسيطهم في الصفحة */
+}
+
+/* صندوق حساب السعرات للأكل */
+.calorie-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.calorie-box input {
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+.calorie-box button {
+  padding: 10px 18px;
+  font-size: 14px;
+  background-color: #04AA6D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calorie-box button:hover {
+  background-color: #028a57;
+}
+
+/* صندوق حساب السعرات اليومية */
+.daily-calorie-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.daily-calorie-box input {
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+.daily-calorie-box button {
+  padding: 10px 18px;
+  font-size: 14px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.daily-calorie-box button:hover {
+  background-color: #e68900;
+}
+
+/* نتيجة الحساب */
+.result {
+  margin-top: 15px;
+  background-color: #eaebe7;
+  padding: 12px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  color: #0c0000;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}

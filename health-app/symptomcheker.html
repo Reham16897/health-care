@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Symptom Checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="symptomchecker.css" />
+</head>
+<body class="symptoms-page">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Online Health Care</div>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="caloriesandfoodtracker.html">Calories & Food Tracker</a></li>
+      <li><a href="symptomchecker.html" class="active">Symptom Checker</a></li>
+      <li><a href="medicalanalysis.html">Medical Analysis</a></li>
+      <li><a href="profile.html" class="profile-link">👤</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Symptom Checker</h1>
+
+    <!-- إدخال الأعراض -->
+    <div class="form-group">
+      <label for="symptomInput">Enter symptoms:</label><br>
+      <input type="text" id="symptomInput" placeholder="Type symptom...">
+      <div id="suggestions"></div>
+    </div>
+
+    <!-- عرض الأعراض المختارة -->
+    <div class="form-group">
+      <label>Selected Symptoms:</label>
+      <ul id="selectedList"></ul>
+    </div>
+
+    <!-- إدخال السن -->
+    <div class="form-group">
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" placeholder="Enter age">
+    </div>
+
+    <!-- إدخال النوع -->
+    <div class="form-group">
+      <label for="gender">Gender:</label><br>
+      <select id="gender">
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+
+    <!-- زر الفحص -->
+    <button type="button" onclick="checkDiseases()">Check Possible Diseases</button>
+
+    <!-- عرض النتائج -->
+    <div id="result">
+      <h3>Possible Diseases</h3>
+      <ul id="diseaseList"></ul>
+    </div>
+  </main>
+
+  <!-- ربط ملفات JS -->
+  <script src="symptomchecker.js"></script>
+  <script src="Disease.js"></script>
+
+</body>
+</html>
